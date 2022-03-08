@@ -1,0 +1,2 @@
+A good source for learning what port knocking is and how to set it up can be found 
+[here at Rapid7](https://www.rapid7.com/blog/post/2017/10/04/how-to-secure-ssh-server-using-port-knocking-on-ubuntu-linux)
