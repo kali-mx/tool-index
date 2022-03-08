@@ -1,8 +1,10 @@
 A good source for learning what port knocking is and how to set it up can be found on the following article:
 https://www.rapid7.com/blog/post/2017/10/04/how-to-secure-ssh-server-using-port-knocking-on-ubuntu-linux
 
-This text will focus on how to use it for CTF/Pentesting. The normal format for using it will be:
-knock port1 port2 port3 ....
+This text will focus on how to use it for CTF/Pentesting. 
+
+Installation is straight forward:
+sudo apt install knockd
 
 Optional switches are:
     -u, --udp             make all ports hits use UDP (default is TCP)
@@ -17,3 +19,6 @@ Example uses:
      knock p1:tcp p2:udp p3:tcp     1st and 3rd ports will be tcp while 2nd port will be udp
      knock -d 10 p1 p2 p3           knock will wait 10 milliseconds inbetween port knocks
      
+This isn't that common of a tool you will need to use for CTFs, but it good to know about incase you get a set of numbers and not sure what to do with them.
+I recently did a box from vulnhub called ProximaCentauri by the group hacksudo. There is one point where you have to get the R coordinates for Proxima Centauri.
+I will admit, I was confused for a bit about what to do with it. Then just gave port knocking a tray and bing!! SSH port opened right up.
