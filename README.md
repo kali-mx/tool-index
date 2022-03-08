@@ -15,8 +15,6 @@ ffuf
 
 stegsuite
 
-knock
-
 netcat
 
 curl
@@ -31,6 +29,6 @@ searchsploit
 
 <h3>Here is a list of complteted writups:</h3>
 
-
+knock
 
 <h3>If you have a suggestion, please leave a comment or email me at gand0rf@protonmail.com</h3>
