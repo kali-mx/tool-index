@@ -1,0 +1,27 @@
+This is a really nice tool for researching vulnerablilities in software and for PoC or explanations of how they work. The fact that you can combine it with nmap output results
+is also really nice.
+
+The online manuel for serach sploit can be found here:  https://www.exploit-db.com/searchsploit
+It also goes over install the tool, so I will not cover it here.
+
+Normal Usage:
+  searchsploit TERM
+  
+Options:
+  There are more options for this tool, I will just be covering the main ones that I believe are the best to know.
+  
+  -u                  This is the update switch. I would say run searchsploit -u at least once a week to make sure you are up to date.
+  --exclude='term1'   If you know of some terms you would liek to exclude from the search results this would be the way to do it.
+                      Multipule terms can be linked with '|' inbetween each term.
+  -m                  Once you find a exploit, you can copy it to your current location using this switch and the numerical name of the exploit.
+                      ex:  searchsploit -m 49966.py
+  -x                  If you find an exploit that you want to take a look at the file without copying it, this would be how to do that.
+                      ex:  searchsploit -x 49966.py
+  --namp              One of the cools things is you can load an nmap xml file and do searches on the version numbers of anythign you find.
+                      ex:  nmap [host] -sV -oX file.xml
+                           searchsploit --namp file.xml
+                           
+Some very import notes from the manuel:
+  Note, SearchSploit uses an AND operator, not an OR operator. The more terms that are used, the more results will be filtered out.
+  Pro Tip: Do not use abbreviations (use SQL Injection, not SQLi).
+  Pro Tip: If you are not receiving the expected results, try searching more broadly by using more general terms (use Kernel 2.6 or Kernel 2.x, not Kernel 2.6.25). 
