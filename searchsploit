@@ -1,8 +1,8 @@
-This is a really nice tool for researching vulnerablilities in software and for PoC or explanations of how they work. The fact that you can combine it with nmap output results
+This is a really nice tool for researching vulnerabilities in software and for PoC or explanations of how they work. The fact that you can combine it with nmap output results
 is also really nice.
 
-The online manuel for serach sploit can be found here:  https://www.exploit-db.com/searchsploit
-It also goes over install the tool, so I will not cover it here.
+The online manual for searchsploit can be found here:  https://www.exploit-db.com/searchsploit
+It also covers how to install the tool, so I will not go into it here.
 
 Normal Usage:
   searchsploit TERM
@@ -17,11 +17,11 @@ Options:
                       ex:  searchsploit -m 49966.py
   -x                  If you find an exploit that you want to take a look at the file without copying it, this would be how to do that.
                       ex:  searchsploit -x 49966.py
-  --namp              One of the cools things is you can load an nmap xml file and do searches on the version numbers of anythign you find.
+  --nmap              One of the coolest things is you can load an nmap xml file and do searches on the version numbers of anything you find.
                       ex:  nmap [host] -sV -oX file.xml
-                           searchsploit --namp file.xml
+                           searchsploit --nmap file.xml
                            
-Some very import notes from the manuel:
-  Note, SearchSploit uses an AND operator, not an OR operator. The more terms that are used, the more results will be filtered out.
+Some very important notes from the manual:
+  SearchSploit uses an AND operator, not an OR operator. The more terms that are used, the more results will be filtered out.
   Pro Tip: Do not use abbreviations (use SQL Injection, not SQLi).
   Pro Tip: If you are not receiving the expected results, try searching more broadly by using more general terms (use Kernel 2.6 or Kernel 2.x, not Kernel 2.6.25). 
