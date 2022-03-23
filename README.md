@@ -25,7 +25,7 @@ hydra
 
 john
 
-<h3>Here is a list of complteted writups:</h3>
+<h3>Here is a list of completed writeups:</h3>
 
 knock
 
