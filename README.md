@@ -53,6 +53,8 @@ traceroute
 
 tracert(Windows)
 
+wpscan
+
 <h4>Web-App Tools</h4>
 
 pentestmonkey
