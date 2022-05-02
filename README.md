@@ -11,8 +11,6 @@ zenmap
 
 rustscan
 
-dirb
-
 gobuster
 
 ffuf
@@ -111,5 +109,7 @@ Zap
 knock
 
 searchsploit
+
+dirb
 
 <h3>If you have a suggestion, please leave a comment or email me at gand0rf@protonmail.com</h3>
