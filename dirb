@@ -1,0 +1,31 @@
+DIRB
+A simple and basic tool for web page validating, but with some nice options.
+
+Basic Use:
+dirb {url} {wordlist} {options}
+dirb http://goole.com – This is the default use and will use a standard basic wordlist.
+If you want to use a wordlist, make sure to include the full path to the list.
+
+OPTIONS:
+-i : Use case-insensitive search
+-l : Print location header when found
+-o <file.txt> : Save output to a file
+-r : Don’t search recursively
+-R : Ask before searching recursively
+-S : Silent mode, do not display tested words
+-t : Don’t force ‘/’ ending on URL
+-w : Don’t stop on WARNING messages
+-X / -x : append extensions to tested word
+-z <time> : Add in milliseconds to a delay to prevent excessive flooding.
+-a <agent string> : Used to provide custom User Agent for request
+-c <cookie_string> : Cookie to use for request
+-H <header_string> : Custom header to use
+-p <proxy[:port]> : Use proxy (default port is 1080)
+-P <proxy_username:proxy_password> : Used to log into proxy
+-u <username:password> : Used for HTTP Auth
+
+As you can see, dirb though a basic command line tool, does provide flexibility. The most useful way I have found to do a basic scan of a site is as follows:
+
+dirb http://target.com /usr/share/wordlists/rockyou.txt -i -R
+
+After the initial scan, I will sometimes go back and add “-x .html, .php” to test extensions.
